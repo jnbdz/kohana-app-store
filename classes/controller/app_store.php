@@ -8,17 +8,17 @@
  * @version 0.1
  */
 
-class Controller_App_Store extends Controller_App {
+class Controller_App_store extends Controller_App {
 
 	public function index() {
 
-		
+		echo 'index';
 
 	}
 
 	public function register() {
 
-		
+		echo 'index';
 
 	}
 
