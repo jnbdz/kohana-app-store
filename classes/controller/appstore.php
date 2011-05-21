@@ -12,13 +12,14 @@ class Controller_Appstore extends Controller_App {
 
 	public function action_index() {
 
-		echo 'index';
+		$this->template->title = 'Store';
 
 	}
 
 	public function action_register() {
 
-		echo View::factory('app-store/register');
+		$this->template->title = 'Register Application';
+		$view = $this->template->content = View::factory('app-store/register');
 
 	}
 
