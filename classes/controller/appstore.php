@@ -1,7 +1,7 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
 /**
- * App_Store controller class.
+ * Appstore controller class.
  *
  * @author Jean-Nicolas Boulay Desjardins (http://jean-nicolas.name/)
  * @package default
@@ -10,13 +10,13 @@
 
 class Controller_Appstore extends Controller {
 
-	public function index() {
+	public function action_index() {
 
 		echo 'index';
 
 	}
 
-	public function register() {
+	public function action_register() {
 
 		echo 'index';
 
