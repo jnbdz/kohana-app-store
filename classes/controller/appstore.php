@@ -8,7 +8,7 @@
  * @version 0.1
  */
 
-class Controller_App_store extends Controller_App {
+class Controller_Appstore extends Controller_App {
 
 	public function index() {
 
