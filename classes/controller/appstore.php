@@ -8,7 +8,7 @@
  * @version 0.1
  */
 
-class Controller_Appstore extends Controller {
+class Controller_Appstore extends Controller_App {
 
 	public function action_index() {
 
@@ -18,8 +18,8 @@ class Controller_Appstore extends Controller {
 
 	public function action_register() {
 
-		echo 'index';
+		echo View::factory('app-store/register');
 
 	}
 
-} // End App_Store
+} // End Appstore
