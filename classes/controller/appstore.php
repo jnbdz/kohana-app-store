@@ -12,7 +12,12 @@ class Controller_Appstore extends Controller_App {
 
 	public function action_index() {
 
-		$this->template->title = 'Store';
+		if (Auth::instance()->logged_in()) {
+
+			$this->template->title = 'Store';
+			$view = $this->template->content = View::factory('app-store/index');
+
+		}
 
 	}
 
@@ -23,6 +28,16 @@ class Controller_Appstore extends Controller_App {
 			$this->template->title = 'Register Application';
 			$view = $this->template->content = View::factory('app-store/register');
 		}
+
+	}
+
+	public function action_product($name) {
+
+		if (Auth::instance()->logged_in()) {
+
+                        $this->template->title = 'Product'.$name;
+                        $view = $this->template->content = View::factory('app-store/product');
+                }
 
 	}
 
