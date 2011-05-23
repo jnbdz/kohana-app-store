@@ -18,8 +18,11 @@ class Controller_Appstore extends Controller_App {
 
 	public function action_register() {
 
-		$this->template->title = 'Register Application';
-		$view = $this->template->content = View::factory('app-store/register');
+		if (Auth::instance()->logged_in()) {
+
+			$this->template->title = 'Register Application';
+			$view = $this->template->content = View::factory('app-store/register');
+		}
 
 	}
 
